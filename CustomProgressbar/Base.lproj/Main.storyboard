@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bc-N0-NjW">
+                                <rect key="frame" x="40" y="197" width="240" height="174"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="PQy-pM-eSS"/>
+                                    <constraint firstAttribute="height" constant="174" id="ca9-4I-1Lk"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ui-8h-nlC">
+                                <rect key="frame" x="110" y="83" width="100" height="39"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.69411764710000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="cC1-RY-kQj"/>
+                                    <constraint firstAttribute="height" constant="39" id="ucU-Ye-oJX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="Show Hud">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showHUD:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uJG-HG-LwW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPv-Ep-qxQ">
+                                <rect key="frame" x="110" y="143" width="100" height="39"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.69411764710000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="8Ww-zz-HQP"/>
+                                    <constraint firstAttribute="height" constant="39" id="Vjn-hk-mCg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="Remove Hud">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="removeHUD:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UIV-pe-BS2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.6705882353" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7ui-8h-nlC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3oA-pd-jM3"/>
+                            <constraint firstItem="lPv-Ep-qxQ" firstAttribute="top" secondItem="7ui-8h-nlC" secondAttribute="bottom" constant="21" id="Bul-l5-jdA"/>
+                            <constraint firstItem="7ui-8h-nlC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="63" id="Jz9-GB-ppe"/>
+                            <constraint firstItem="lPv-Ep-qxQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XQb-eU-ECi"/>
+                            <constraint firstItem="8bc-N0-NjW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XeL-bV-JIi"/>
+                            <constraint firstItem="8bc-N0-NjW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vHr-l6-sp4"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="view_Show_Hud" destination="8bc-N0-NjW" id="Uu5-cU-RJZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="305"/>
+        </scene>
+    </scenes>
+</document>
